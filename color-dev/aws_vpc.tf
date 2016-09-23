@@ -7,6 +7,15 @@ provider "aws" {
     region = "${var.region}"
 }
 
+data "terraform_remote_state" "remote_main" {
+    backend = "s3"
+    config {
+        bucket = "${var.s3_bucket_name}"
+        key = "${var.app_name}/terraform.tfstate"
+        region = "${var.region}"
+    }
+}
+
 #####################################
 # VPC Settings
 #####################################

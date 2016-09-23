@@ -2,12 +2,13 @@
 # TerraForm Variable Settings
 #####################################
 #AWS Settings
-#access_key = ""   # 環境変数TF_VAR_access_key
-#secret_key = ""   # 環境変数TF_VAR_secret_key
+#access_key = ""     # 環境変数TF_VAR_access_key
+#secret_key = ""     # 環境変数TF_VAR_secret_key
+#s3_bucket_name = "" # 環境変数 TF_VAR_s3_bucket_name
 region = "ap-northeast-1"
 
-#ssh_key_file = "" # 環境変数TF_VAR_ssh_key_file
-#key_name = ""     # 環境変数TF_VAR_key_name
+#ssh_key_file = ""   # 環境変数TF_VAR_ssh_key_file
+#key_name = ""       # 環境変数TF_VAR_key_name
 
 #App Name
 app_name = "color-dev"
